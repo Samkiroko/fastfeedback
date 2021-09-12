@@ -85,7 +85,7 @@ function useProvideAuth() {
     return firebase
       .auth()
       .signOut()
-      .then(() => setUser(false));
+      .then(() => handleUser(false));
   };
 
   // useEffect(() => {
